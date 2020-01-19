@@ -1,17 +1,22 @@
 import React, { Component} from "react"
 import "./assets/jss/App.css"
-import {Animated} from "react-animated-css"
+import ComingSoon from "./views/ComingSoon"
+// import GamerCard from "./views/GamerCard"
+// import gamersInfos from "./datas/gamersInfos"
 
 class App extends Component{
-
+  // constructor () {
+  //   super()
+  //   this.state = {
+  //     gamersList: gamersInfos
+  //   }
+  // }
   
-  render () {
+  render () {   
+    // const gamersCards = this.state.gamersList.map(gamer => <GamerCard key={gamer.id} gamer={gamer}/>)
     return(
       <div className="App">
-        <Animated animationIn="flipInX" animationOut="fadeOut" isVisible={true}>
-          <img src={require('./assets/img/logo_final.png')} className="logo" alt="Logo" />
-        </Animated>        
-        <h1 className="waiting-text"> Site en construction</h1>
+        <ComingSoon></ComingSoon>
       </div>
     )
   }
