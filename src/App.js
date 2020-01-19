@@ -12,13 +12,10 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 class App extends Component{
   constructor () {
     super()
-    this.state = {
-      gamersList: []
-    }
+    this.state = {}
   }
   
   render () {   
-    // const gamersCards = this.state.gamersList.map(gamer => <GamerCard key={gamer.id} gamer={gamer}/>)
     return(
       <Router>
         <div className="App">

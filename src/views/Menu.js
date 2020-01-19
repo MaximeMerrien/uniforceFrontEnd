@@ -6,7 +6,7 @@ class Menu extends Component{
   
   render () {
     const navStyle = {
-      color: 'white'
+      color: 'black'
     }
     return(
       <nav>

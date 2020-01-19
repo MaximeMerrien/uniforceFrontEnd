@@ -2,96 +2,95 @@
 * {margin: 0;padding: 0;box-sizing: border-box;}
 
 body {
-  background-color: rgb(48, 47, 47);
+  /* background-color: rgb(48, 47, 47); */
 }
 
 .App {
-  /* display: flex;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+  margin: 50px 0;
+  color: #cccccc;
+  text-align: center;
+}
+
+/* ******** COMING SOON ******** */
+
+.ComingSoon {
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   width: 100vw;
   height: auto;
-  font-family: Arial, Helvetica, sans-serif; */
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
 
-
-
-/* h1.main-title{
-  margin: 50px 0;
-  color: #cccccc;
-} */
+.forLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* ******** MENU ******** */
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
-  min-height: 10vh;
-  color: white;
+  width: 100vw;
+  min-height: 20vh;
 }
-.Header{
+
+.LogoContain{
   display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
+
 .Icons{
   display: flex;
-  flex-direction: row;
   width: 100%;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   height: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+
 .Icons img{
   width: 20px;
   margin: 10px;
 }
-.Menu{
-  display: flex;
-  flex-direction: row;
-  height:200px;
-  width: 100%;
-  align-items: center;
-  background-color: #3a98d9;
-}
-                                    .Menu a{
-  padding: 3px;
-  border-right: solid #2F2F2F;
-}
-.Menu a:hover{
-  color: #d73983;
-  cursor: pointer;
+  
 
-
-}
-/* .LogoContain{
-  display: flex;
-  width: 100%;
-}
-.logo {
-  align-self: flex-start;
-  height: 100px;
-  min-width: 100px;
-  max-width: 200px; */
 .nav-links {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 40%;
+  width: 40vw;
+  margin-left: 20vw;
   list-style: none;
+}
+
+.nav-links:hover{
+  color: #d73983;
+  cursor: pointer;
 }
 
 /* ******** GAMERS ******** */
 
-/* .gamers-list {
+.gamers-list {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
   margin-top: 20px;
-} */
+}
