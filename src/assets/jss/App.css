@@ -1,11 +1,37 @@
+/* ******** GLOBAL CSS ******** */
+* {margin: 0;padding: 0;box-sizing: border-box;}
+
+body {
+  background-color: rgb(48, 47, 47);
+}
+
 .App {
-  display: flex;
+  /* display: flex;
+  overflow: hidden;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   width: 100vw;
-  height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
+  height: auto;
+  font-family: Arial, Helvetica, sans-serif; */
+  text-align: center;
+}
+
+
+
+/* h1.main-title{
+  margin: 50px 0;
+  color: #cccccc;
+} */
+
+/* ******** MENU ******** */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  color: white;
 }
 .Header{
   display: flex;
@@ -42,7 +68,7 @@
 
 
 }
-.LogoContain{
+/* .LogoContain{
   display: flex;
   width: 100%;
 }
@@ -50,9 +76,22 @@
   align-self: flex-start;
   height: 100px;
   min-width: 100px;
-  max-width: 200px;
+  max-width: 200px; */
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+  list-style: none;
 }
 
-.waiting-text {
-  text-align: center;
-}
+/* ******** GAMERS ******** */
+
+/* .gamers-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
+} */
