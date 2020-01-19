@@ -1,4 +1,9 @@
 /* ******** GLOBAL CSS ******** */
+* {margin: 0;padding: 0;box-sizing: border-box;}
+
+body {
+  background-color: rgb(48, 47, 47);
+}
 
 .App {
   display: flex;
@@ -12,7 +17,8 @@
 }
 
 h1.main-title{
-  color: black;
+  margin: 50px 0;
+  color: #cccccc;
 }
 
 /* ******** COMING SOON ******** */
@@ -52,4 +58,5 @@ h1.main-title{
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
+  margin-top: 20px;
 }
