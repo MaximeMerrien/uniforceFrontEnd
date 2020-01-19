@@ -1,4 +1,23 @@
+/* ******** GLOBAL CSS ******** */
+
 .App {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1.main-title{
+  color: black;
+}
+
+/* ******** COMING SOON ******** */
+
+.ComingSoon {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,10 +25,16 @@
   width: 100vw;
   height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
+}
 
+.forLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
+  align-content: center;
   min-width: 100px;
   max-width: 200px;
   height: auto;
@@ -17,4 +42,14 @@
 
 .waiting-text {
   text-align: center;
+}
+
+/* ******** GAMERS ******** */
+
+.gamers-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
