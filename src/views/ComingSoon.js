@@ -7,12 +7,12 @@ class ComingSoon extends Component{
   render () {
     return(
       <div className="ComingSoon">
-        <div className="forLogo">
+        <div className="ForLogo">
             <Animated animationIn="flipInX" animationOut="fadeOut" isVisible={true}>
-                <img src={require('../assets/img/logo_final.png')} className="logo" alt="Logo" />
+                <img src={require('../assets/img/logo_final.png')} className="Logo-one" alt="Logo" />
             </Animated>        
         </div>       
-        <h1 className="waiting-text">Site en construction</h1>
+        <h1 className="Waiting-text">Site en construction</h1>
       </div>
     )
   }

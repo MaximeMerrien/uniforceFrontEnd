@@ -1,8 +1,9 @@
 /* ******** GLOBAL CSS ******** */
 * {margin: 0;padding: 0;box-sizing: border-box;}
 
-body {
-  /* background-color: rgb(48, 47, 47); */
+html, body {
+  height: 100vh;
+  background-color: rgb(29, 29, 29);
 }
 
 .App {
@@ -11,7 +12,10 @@ body {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: auto;
+ min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -60px; /* the bottom margin is the negative value of the footer's height */
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -34,7 +38,7 @@ h1{
   text-align: center;
 }
 
-.forLogo {
+.ForLogo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,49 +48,78 @@ h1{
 
 nav {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  flex-wrap: wrap;
   width: 100vw;
   min-height: 20vh;
+  /* height: 600px; */
+  padding-bottom: 20px;
+  background-image: url(../img/fond.jpg);
+  background-size: 100% auto;  
 }
 
-.LogoContain{
+.Logo-contain {
   display: flex;
-  justify-content: flex-start;
-}
-
-.Icons{
-  display: flex;
-  width: 100%;
-  /* justify-content: flex-end; */
-  height: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-
-.Icons img{
-  width: 20px;
-  margin: 10px;
-}
-  
-
-.nav-links {
-  display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  width: 40vw;
-  margin-left: 20vw;
-  list-style: none;
+  margin: 0 20px;
+  padding: 20px;
 }
 
-.nav-links:hover{
-  color: #d73983;
+.Logo {
+
+  /* align-content: center; */
+  min-width: 100px;
+  max-width: 200px;
+  height: auto;
+  background-color: white;
+  border-radius: 50%;
+  
+}
+
+.Nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-width: 100px;
+  max-width: 500px;
+  /* margin-left: 20vw; */
+  
+}
+
+.Nav-links a {
+  margin: 0 20px;
+  list-style: none;
+  text-decoration: none;
+  font-weight: 600; 
+  font-size: 24px;
+}
+
+.Nav-links li {
+  color: rgb(83, 250, 236);
+}
+
+.Nav-links li:hover{
+  color: #e91678;
   cursor: pointer;
+}
+
+/* ******** HOME ******** */
+
+.Home {
+  flex: 1;
+}
+
+.Twitch {
+  border-top: solid 1px  rgb(83, 250, 236);
+  border-left: solid 1px  rgb(83, 250, 236);
+  box-shadow: 5px 5px 5px #e91678;
 }
 
 /* ******** GAMERS ******** */
 
-.gamers-list {
+.Gamers-list {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -94,3 +127,33 @@ nav {
   width: 100%;
   margin-top: 20px;
 }
+
+/* ******** FOOTER ******** */
+
+.Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* height: auto; */
+  margin-top: 5px;
+  /* padding-top: 20px; */
+  background-color: black;
+}
+
+.Footer, .Push {
+  height: 60px;
+  clear: both; /* .push must be the same height as .footer */  
+}
+
+.Icons {
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.Icons img{
+  width: 20px;
+  height: auto;
+  margin: 10px;
+}  

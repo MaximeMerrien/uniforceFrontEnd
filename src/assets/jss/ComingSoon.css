@@ -11,20 +11,20 @@
     background-color: white;
   }
   
-  .forLogo {
+  .ForLogo {
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  .logo {
+  .Logo-one {
     align-content: center;
     min-width: 100px;
     max-width: 200px;
     height: auto;
   }
   
-  .waiting-text {
+  .Waiting-text {
     text-align: center;
   }
   

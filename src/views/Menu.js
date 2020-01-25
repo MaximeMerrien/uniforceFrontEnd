@@ -10,22 +10,20 @@ class Menu extends Component{
     }
     return(
       <nav>
-        <div className="LogoContain">
+        <div className="Logo-contain">
           <Animated animationIn="flipInX" animationOut="fadeOut" isVisible={true}>
-            <img src={require('../assets/img/logo_final.png')} className="logo" alt="Logo" />
+            {/* <div className="Logo-box"> */}
+              <img className="Logo" src={require('../assets/img/logo_final.png')} alt="Logo" />
+            {/* </div>             */}
           </Animated>
-          <div className="Icons">
-            <a href="https://twitter.com/UniForceTV"><img src={require('../assets/img/icon/twitter.svg')} alt="logo twitter"/></a>
-            <a href="https://instagram.com/tvuniforce"><img src={require('../assets/img/icon/instagram.svg')} alt="logo instagram"/></a>
-          </div>
         </div>          
-        <ul className="nav-links">
+        <ul className="Nav-links">
           <Link style={navStyle} to='/'>
             <li>Home</li>
           </Link>
           <Link style={navStyle} to='/team'>
             <li>Uniforce Team</li>
-          </Link>              
+          </Link>
         </ul>
       </nav>
     )
