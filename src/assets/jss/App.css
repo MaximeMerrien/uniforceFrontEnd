@@ -9,13 +9,10 @@ html, body {
 .App {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100vw;
- min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -60px; /* the bottom margin is the negative value of the footer's height */
+  min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -109,6 +106,12 @@ nav {
 
 .Home {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 500px;
+  padding: 20px 0;
 }
 
 .Twitch {
@@ -120,6 +123,7 @@ nav {
 /* ******** GAMERS ******** */
 
 .Gamers-list {
+  flex: 1;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -135,16 +139,16 @@ nav {
   justify-content: center;
   align-items: center;
   width: 100%;
-  /* height: auto; */
-  margin-top: 5px;
+  height: 60px;
+  margin-top: 20px;
   /* padding-top: 20px; */
   background-color: black;
 }
 
-.Footer, .Push {
+/* .Footer, .Push {
   height: 60px;
-  clear: both; /* .push must be the same height as .footer */  
-}
+  clear: both; .push must be the same height as .footer 
+} */
 
 .Icons {
   bottom: 0;
