@@ -17,7 +17,7 @@ class UniforceTeam extends Component{
       <div className="UniforceTeam">
         <h1 className="UniforceTeam-title">UNI-FORCE Team</h1>
         <div className="Gamers-list">{gamersCards}</div>       
-      </div>   
+      </div>
     )
   }
 }
