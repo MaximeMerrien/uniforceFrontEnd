@@ -15,7 +15,7 @@ class UniforceTeam extends Component{
     const gamersCards = this.state.gamersList.map(gamer => <GamerCard key={gamer.id} gamer={gamer}/>)
     return(
       <div className="UniforceTeam">
-        <h1 className="UniforceTeam-title">UNI-FORCE Team</h1>
+        {/* <h1 className="UniforceTeam-title">UNI-FORCE Team</h1> */}
         <div className="Gamers-list">{gamersCards}</div>       
       </div>
     )
