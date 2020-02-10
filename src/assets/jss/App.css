@@ -98,9 +98,10 @@ nav {
   margin: 0 30px;
   list-style: none;
   text-decoration: none;
-  font-weight: 600; 
-  font-size: 24px;
-  color: #3a98d9;
+  /* font-weight: 600;  */
+  font-size: 18px;
+  /* color: #3a98d9; */
+  color: #e8eaeb;
 }
 
 .Nav-link--active {
@@ -152,7 +153,7 @@ nav {
 .Gamers-list {
   flex: 1;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;

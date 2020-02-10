@@ -10,9 +10,28 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 class App extends Component{
   constructor () {
     super()
-    this.state = {}
+    this.state = {
+      // récupérer les données +tôt initialiser un tableau 
+      // webpagedata : []
+    }
   }
   
+  // WIP for http request
+  // componentDidMount(){
+  //     fetch("hhtfzfjzfnfzfo", {
+  //       method:'POST',
+  //       body:JSON.stringify({
+  //         "kzfjzlfnfln":"fihhf"
+  //       })
+  //     }).then(res => res.json).then(data =>{
+  //       this.setState(prevState => {
+  //         webpagedata: data
+  //       })
+  //     })
+  // }
+
+  
+
   render () {   
     return(
       <Router>

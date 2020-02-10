@@ -2,14 +2,15 @@
   display: flex;
   flex-direction: column;
   align-content: flex-end;
-  min-width: 300px;
-  max-width: 500px;
-  min-height: 300px;
+  width: 300px;
+  height: 300px;
   padding: 20px;
   margin: 20px;
   /* background-color:  rgb(48, 47, 47); */
-  box-shadow: 0 0 10px rgb(83, 250, 236);
+  box-shadow: 5px 5px 20px #d73983, -2px -2px 20px  #3a98d9;
+  /* box-shadow: 0 0 10px rgb(83, 250, 236); */
   color: rgb(83, 250, 236);
+  cursor: pointer;
 }
 
 .Gamer-shield {
@@ -22,14 +23,15 @@
 .Gamer-photo {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 150px;
-  min-width: 150px;
-  min-height: 150px;
+  align-items: center;  
   margin-bottom: 20px;
   margin-bottom: 50px;
   /* box-shadow: inset 0 0 5px rgb(83, 250, 236); */
+}
+
+.Gamer-photo img {
+    width: 150px;
+    height: 150px;
 }
 
 .Gamer-description {
@@ -41,4 +43,9 @@
 .Gamer-pseudo{
   font-weight: bold;
   font-size: 20px;
+}
+.Gamer-motto{
+  /* font-weight: bold; */
+  font-size: 16px;
+  text-align: center;
 }
