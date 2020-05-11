@@ -7,9 +7,10 @@ class GamerCard extends Component{
     super()
     this.onClickTrue = this.onClickTrue.bind(this);
     this.onClickFalse = this.onClickFalse.bind(this);
-    this.state = {showMe: false}
+    this.state = {
+      showMe: false
+    }
   }
-
   
   onClickTrue(){
     this.setState({ showMe : true} )
