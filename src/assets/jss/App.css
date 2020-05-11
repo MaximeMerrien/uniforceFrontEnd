@@ -6,6 +6,10 @@ html, body {
   background-color: black;
 }
 
+.test {
+  color: white;
+}
+
 .App {
   display: flex;
   flex-direction: column;

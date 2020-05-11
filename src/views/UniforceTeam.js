@@ -8,9 +8,20 @@ class UniforceTeam extends Component{
   constructor () {
     super()
     this.state = {
-      gamersList: gamersInfos
+      gamersList: []
     }
   }
+
+  componentDidMount(){
+    fetch("http://localhost:8000/team", {
+          method:'GET'
+      }).then(res => res.json()).then(data => {
+        this.setState({
+          gamersList: data
+        })
+    })
+  }
+
   render () {
     const gamersCards = this.state.gamersList.map(gamer => <GamerCard key={gamer.id} gamer={gamer}/>)
     return(

@@ -12,12 +12,10 @@ class GamerCard extends Component{
 
   
   onClickTrue(){
-    this.setState({ showMe : true} )
-    console.log('click')
+    this.setState({ showMe : true })
   }
   onClickFalse(){
-    this.setState({ showMe : false} )
-    console.log('click')
+    this.setState({ showMe : false })
   }
 
   render () {
@@ -25,15 +23,8 @@ class GamerCard extends Component{
       // verso (hover)
       return(
         <div className="GamerCard" onMouseLeave={this.onClickFalse}>
-          {/* <div className="Gamer-shield">
-            <div className="Gamer-photo">
-              <img src={require('../assets/img/logo_final.png')} alt="Photo du joueur" />
-            </div>
-            <div className="Gamer-pseudo">{this.props.gamer.pseudo}</div>
-            <div className="Gamer-motto">{this.props.gamer.motto}</div>          
-          </div> */}
-          <div className="Gamer-description">Type de jeux : {this.props.gamer.typeGame}</div>
-          <div className="Gamer-description">Jeux préférés : {this.props.gamer.favGame}</div>
+        <div className="Gamer-description">Niveau : {this.props.gamer.niveau}</div>
+        <div className="Gamer-description">Pseudo Joueur : {this.props.gamer.pseudoJoueur}</div>
         </div>
       )
     } else {
@@ -44,8 +35,7 @@ class GamerCard extends Component{
             <div className="Gamer-photo">
               <img src={require('../assets/img/logo_final.png')} alt="Photo du joueur" />
             </div>
-            <div className="Gamer-pseudo">{this.props.gamer.pseudo}</div>
-            <div className="Gamer-motto">{this.props.gamer.motto}</div>          
+            <div className="Gamer-pseudo">{this.props.gamer.pseudo}</div>         
           </div>
         </div>
       )
