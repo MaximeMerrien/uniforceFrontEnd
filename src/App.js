@@ -14,6 +14,7 @@ class App extends Component{
         <div className="App">
           {/* <ComingSoon></ComingSoon> */}
           <Header/>
+          <p>{this.state.webpagedata}</p>
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/team" component={UniforceTeam} />            
