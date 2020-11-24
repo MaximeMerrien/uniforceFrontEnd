@@ -5,7 +5,6 @@ import "../assets/jss/Home.css"
 class Home extends Component{  
   constructor () {
     super()
-    console.log('DOM', document.getElementsByClassName('Twitch-player'))
   }
 
   render () {
