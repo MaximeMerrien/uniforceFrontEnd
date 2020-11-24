@@ -9,11 +9,13 @@ class Home extends Component{
         {/* <h1 className="Home-title">UNI-FORCE tv</h1> */}
         <div className="Twitch">
           <iframe
-            src="https://player.twitch.tv/?channel=uniforce_tv"
-            frameBorder="0"
-            allowFullScreen="true"
-            scrolling="no"            
-            />
+            src="https://player.twitch.tv/?channel=uniforce_tv&parent=localhost&muted=true"
+            height="720"
+            width="1280"
+            frameborder="0"
+            scrolling="no"
+            allowfullscreen="true"
+          />
         </div>
         <div>
           <iframe frameborder="0"
