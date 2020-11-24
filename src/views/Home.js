@@ -16,6 +16,15 @@ class Home extends Component{
             height="378"
             width="620"/>
         </div>
+        <div>
+          <iframe frameborder="0"
+          scrolling="no"
+          id="chat_embed"
+          src="https://www.twitch.tv/embed/uniforce_tv/chat?parent=localhost"
+          height="500"
+          width="350">
+          </iframe>
+        </div>
         <div class="Push"></div>
       </div>
     )
