@@ -22,6 +22,17 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>    
     <div id="root"></div>
     <script src="../dist/bundle.js"></script>
+    <!-- Player Twitch & Chat -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: 1281,
+        height: 720,
+        channel: "uniforce_tv",
+        theme: 'dark',
+        muted: true
+      });
+    </script>
   </body>
   
 </html>
