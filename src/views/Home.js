@@ -1,47 +1,39 @@
 import React, { Component} from 'react'
 import "../assets/jss/Home.css"
+const EMBED_URL = 'https://embed.twitch.tv/embed/v1.js'
 
+class Home extends Component{ 
 
-class Home extends Component{  
   constructor () {
     super()
+  }
+
+  componentDidMount() {
+    console.log('home mounted')
+    let embed;
+    const script = document.createElement('script')
+    script.setAttribute(
+      'src',
+      EMBED_URL
+    )
+    script.addEventListener('load', () => {
+      embed = new window.Twitch.Embed("twitch-embed", {
+          width: '100%',
+          height: '100%',
+          channel: 'uniforce_tv',
+          theme: 'dark',
+          muted: true
+    })
+  })
+        document.body.appendChild(script)
   }
 
   render () {
     return(
       <div className="Home">
-        {/* <h1 className="Home-title">UNI-FORCE tv</h1> */}
         <div className="Twitch">
-          <div className="Player-embed">
-            <div id="twitch-embed"></div>
-          </div>
+          <div id="twitch-embed"></div>
         </div>
-        {/* <div className="Twitch">
-          <div className="Twitch-channel-player">
-            <div className="Twitch-player">
-              <iframe
-                src="https://player.twitch.tv/?channel=uniforce_tv&parent=localhost&muted=true"
-                height="720"
-                width="1280"
-                frameborder="0"
-                scrolling="no"
-                allowfullscreen="true"
-              />                
-            </div>
-          </div>
-          <div className="Twitch-channel-chat">
-            <div className="Twitch-chat">
-              <iframe
-                frameborder="0"
-                scrolling="no"
-                src="https://www.twitch.tv/embed/uniforce_tv/chat?parent=localhost&theme=dark"
-                height="500"
-                width="350"
-              />  
-            </div>
-          </div>
-        </div> */}
-        {/* <div class="Push"></div> */}
       </div>
     )
   }
